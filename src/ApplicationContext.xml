@@ -3,5 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <!--面向实现编程实现的东西-->
     <bean id="sample" class="Beans.Sample"></bean>
+    <!--面向接口编程实现的东西-->
+    <bean id="compute" class="Beans.Sample1"></bean>
+
 </beans>

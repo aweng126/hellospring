@@ -2,9 +2,9 @@ package Beans;
 
 /**
  * Created by kingwen on 2017/4/14.
- * 第一版本，面向实现编程。
+ * 面向接口编程。
  */
-public class Sample {
+public class Sample1 implements Compute{
     public int compute(int i,int j){
         return i+j;
     }
