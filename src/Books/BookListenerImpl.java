@@ -8,8 +8,13 @@ import java.util.List;
  */
 public class BookListenerImpl implements BookListener{
     BookFinder bookFinder;
+
+    public void setBookFinder(BookFinder bookFinder) {
+        this.bookFinder = bookFinder;
+    }
+
     public BookListenerImpl() {
-        bookFinder=new SimpleFinderImpl();
+//        bookFinder=new SimpleFinderImpl();
     }
 
     @Override

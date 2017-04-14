@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class BookTest  {
     public static void main(String[] args) {
-        
+
         BeanFactory beanFactory = new ClassPathXmlApplicationContext("applicationContext.xml");
         BookListener bl = (BookListener) beanFactory.getBean("booklistener");
         Book[] books = bl.findBooks("book3");

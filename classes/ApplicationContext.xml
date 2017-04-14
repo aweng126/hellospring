@@ -8,6 +8,11 @@
     <!--面向接口编程实现的东西-->
     <bean id="compute" class="Beans.Sample1"></bean>
 
-    <bean id="booklistener" class="Books.BookListenerImpl"></bean>
+
+
+    <bean id="filefinderimpl" class="Books.FileBookFinderImpl"></bean>
+    <bean id="booklistener" class="Books.BookListenerImpl">
+        <property name="bookFinder" ref="filefinderimpl"></property>
+    </bean>
 
 </beans>
