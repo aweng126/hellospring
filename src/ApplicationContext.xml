@@ -8,4 +8,6 @@
     <!--面向接口编程实现的东西-->
     <bean id="compute" class="Beans.Sample1"></bean>
 
+    <bean id="booklistener" class="Books.BookListenerImpl"></bean>
+
 </beans>
